@@ -1,0 +1,11 @@
+/Users/komiya-daisuke/.rbenv/versions/2.2.0/bin/ruby -r ./siteconf20160313-55359-1agrqr1.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling fast_blank.c
+linking shared-object fast_blank.bundle
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 fast_blank.bundle ./.gem.20160313-55359-nzo200

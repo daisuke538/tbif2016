@@ -1,0 +1,25 @@
+{
+  "name": "coconofest2016",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daisuke538/cocono_fest_2016.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daisuke538/cocono_fest_2016/issues"
+  },
+  "homepage": "https://github.com/daisuke538/cocono_fest_2016#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssnext": "^1.0.1",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-sass": "^2.2.0"
+  }
+}
