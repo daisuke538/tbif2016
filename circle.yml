@@ -6,11 +6,6 @@ general:
 machine:
   timezone: Asia/Tokyo
 
-dependencies:
-  pre:
-    - npm install -g bower
-    - bower install
-
 test:
   override:
     - bundle exec middleman build
