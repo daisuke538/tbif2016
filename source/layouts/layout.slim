@@ -13,16 +13,16 @@ html
     meta content="IE=edge" http-equiv="X-UA-Compatible"
     meta charset="utf-8"
     meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"
-    meta name="keywords" content="#{current_page.data.keywords}"
-    meta name="description" content="#{current_page.data.description}"
+    meta name="keywords" content=""
+    meta name="description" content=""
     / Facebook
-    meta property="og:title" content="#{current_page.data.og_title}"
-    meta property="og:type" content="#{current_page.data.og_type}"
+    meta property="og:title" content=""
+    meta property="og:type" content=""
     meta property="og:locale" content="ja_JP"
-    meta property="og:url" content="#{current_page.data.og_url}"
-    meta property="og:site_name" content="SITE NAME"
-    meta property="og:description" content="#{current_page.data.og_description}"
-    meta property="og:image" content="http://coconofest.asia/#{dcurrent_page.data.og_image}"
+    meta property="og:url" content=""
+    meta property="og:site_name" content=""
+    meta property="og:description" content=""
+    meta property="og:image" content="http://coconofest.asia/images/"
     meta property="fb:app_id" content=""
     / Twitter
     meta name="twitter:card" content="summary"
@@ -36,5 +36,5 @@ html
     link href="//fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css"
     = stylesheet_link_tag :site
     = javascript_include_tag :all
-  body class="#{page_classes}"
+  body.page_classes
     = yield
