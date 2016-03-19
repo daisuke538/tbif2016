@@ -1,19 +1,28 @@
+---
+keywords: 福岡,九州,フェス,音楽
+description: '九州の音楽を地元へ、全国へ発信する。九州が舞台のDIYフェス。'
+
+og_title: 'cocono fest. 2016'
+og_type: 'website'
+og_description: '九州の音楽を地元へ、全国へ発信する。九州が舞台のDIYフェス。'
+---
+
 | <!doctype html>
 html
   head
     meta content="IE=edge" http-equiv="X-UA-Compatible"
     meta charset="utf-8"
     meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"
-    meta name="keywords" content="#{data.page.keywords}"
-    meta name="description" content="#{data.page.description}"
+    meta name="keywords" content="#{current_page.data.keywords}"
+    meta name="description" content="#{current_page.data.description}"
     / Facebook
-    meta property="og:title" content="#{data.page.og_title}"
-    meta property="og:type" content="#{data.page.og_type}"
+    meta property="og:title" content="#{current_page.data.og_title}"
+    meta property="og:type" content="#{current_page.data.og_type}"
     meta property="og:locale" content="ja_JP"
-    meta property="og:url" content="#{data.page.og_url}"
+    meta property="og:url" content="#{current_page.data.og_url}"
     meta property="og:site_name" content="SITE NAME"
-    meta property="og:description" content="#{data.page.og_description}"
-    meta property="og:image" content="http://coconofest.asia/#{data.page.og_image}"
+    meta property="og:description" content="#{current_page.data.og_description}"
+    meta property="og:image" content="http://coconofest.asia/#{dcurrent_page.data.og_image}"
     meta property="fb:app_id" content=""
     / Twitter
     meta name="twitter:card" content="summary"
@@ -27,5 +36,5 @@ html
     link href="//fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css"
     = stylesheet_link_tag :site
     = javascript_include_tag :all
-  body.#{page_classes}
+  body class="#{page_classes}"
     = yield
