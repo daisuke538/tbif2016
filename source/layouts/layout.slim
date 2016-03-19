@@ -4,8 +4,27 @@ html
     meta content="IE=edge" http-equiv="X-UA-Compatible"
     meta charset="utf-8"
     meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"
+    meta name="keywords" content="#{data.ogp.keywords}"
+    meta name="description" content="#{data.ogp.description}"
+    / Facebook
+    meta property="og:type" content="company"
+    meta property="og:locale" content="ja_JP"
+    meta property="og:url" content="#{data.ogp.og.url}"
+    meta property="og:title" content="#{data.ogp.title}"
+    meta property="og:site_name" content="#{data.ogp.og.sitename}"
+    meta property="og:description" content="#{data.ogp.og.description}"
+    - data.ogp.og.images.each do |image|
+      meta property="og:image" content="#{image}"
+    meta property="fb:app_id" content="#{data.ogp.fb.app_id}"
+    / Twitter
+    meta name="twitter:card" content="summary"
+    meta name="twitter:site" content="@coconofest"
+    meta name="twitter:creator" content="@coconofest"
+    meta name="twitter:domain" content="coconofest.asia"
     title
-      = current_page.data.title || "Middleman"
+      = current_page.data.title || "cocono fest. 2016"
+    / favicon
+    link href="/images/favicon.ico" rel="shortcut icon"
     link href="//fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css"
     = stylesheet_link_tag :site
     = javascript_include_tag :all

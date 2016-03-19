@@ -1,0 +1,28 @@
+url: &url
+  'http://coconofest.asia'
+title: &title
+  'cocono fest. 2016'
+description: &description
+  '九州の音楽を地元へ、全国へ発信する。九州が舞台のDIYフェス。'
+keyworkds: &keyworkds
+  '福岡,九州,フェス,音楽'
+
+&test: 1
+
+twitter:
+  lang: 'ja'
+  hashtags: '#coconofest'
+  site: *title
+  text: *title
+line:
+  text: *title
+  link: *url
+fb:
+  app_id: '1234'
+og:
+  locale: 'ja_JP'
+  images: ['http://coconofest.asia/ogp.jpg']
+  url: ''
+  title: *title
+  site_name: *title
+  description: *description
