@@ -1,5 +1,6 @@
 | <!doctype html>
 html
+
   head
     meta content="IE=edge" http-equiv="X-UA-Compatible"
     meta charset="utf-8"
@@ -27,5 +28,8 @@ html
     link href="//fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css"
     = stylesheet_link_tag :site
     = javascript_include_tag :all
+
   body class="#{page_classes}"
+    = partial "share/header"
     = yield
+    = partial "share/footer"
