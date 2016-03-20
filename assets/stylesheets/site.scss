@@ -141,6 +141,6 @@ header {
 @media screen and ( max-width: 767px ) {
   .section-first {
     background: url( "/images/header_image.jpg" );
-    background-attachment: fixed;
+    background-attachment: scroll;
   }
 }
