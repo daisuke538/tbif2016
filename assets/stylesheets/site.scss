@@ -1,67 +1,146 @@
 @charset "utf-8";
 @import "normalize";
 
+body, header {
+  width: 100%;
+}
+
 body {
-  background: #ECC561;
-  text-align: center;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
 }
 
-.logo img {
-  height: 18.75em;
-  margin-top: 6em;
+header {
 }
 
-h1 {
-  color: rgba(0,0,0,0.5);
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.8em;
-  font-weight: 400;
-  margin: 0;
-}
+.welcome {
+  width: 100%;
 
-.doc {
-  margin: 3em 0;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.1em;
-  font-weight: 300;
+  .cover, .box-fix,
+  .section-first, .section-second, .section-third, .section-fourth,
+  .box-fix, .box-first, .box-second, .box-third, .box-fourth,
+  .pattern-first, .pattern-third {
+    width: 100%;
+    border: 1px solid black;
+  }
 
-  a {
-    border: 1px solid white;
-    border-radius: 3px;
-    padding: 0.75em 0.7em;
-    color: white;
-    text-decoration: none;
-    transition: color 0.1s linear;
-    &:hover {
-      background: rgba(0,0,0,0.2);
+  .cover {
+    position: relative;
+    height: 70%;
+    margin: 0;
+    padding: 0;
+    padding-top: 70%;
+    display: block;
+    color: #fff;
+  }
+
+  .section-first {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url( "/images/section_first_image.jpg" );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    -moz-background-size: cover;
+    display: inline-block;
+
+    .box-first {
+      color: #fff;
+    }
+  }
+
+  .box-fix {
+    position: fixed;
+    height: 20px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    line-height: 160%;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+  }
+
+  .pattern-first {
+    position: absolute;
+    height: 100%;
+    top: 0; // section-firstからの距離感
+    left: 0;
+    background-image: url( "/images/pattern.png" );
+    background-repeat: repeat;
+    background-attachment: scroll;
+    z-index: 10;
+  }
+
+  .section-second {
+    position: absolute;
+    height: 600px;
+    top: 100%; // section-firstからの距離感
+    left: 0;
+    background-color: #fff;
+
+    .box-second {
+      height: 300px;
+      top: 100%; // section-secondのtopを同じ値
+      //background-color: #582;
+      color: #000;
+    }
+  }
+
+  .section-third {
+    position: absolute;
+    height: 1200px;
+    top: calc( 600px + 100% ); // secondのheight+100%
+    left: 0;
+    background: url( "/images/section_second_image.jpg" );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    -moz-background-size: cover;
+    display: inline-block;
+
+    .box-third {
+      height: 200px;
+      top: calc( 600px + 100% ); // section-thirdのtopを同じ値
+      //background-color: #597;
+      color: #fff;
+    }
+  }
+
+  .pattern-third {
+    position: absolute;
+    height: 100%;
+    top: 200%;
+    left: 0;
+    background-image: url( "/images/pattern.png" );
+    background-repeat: repeat;
+    background-attachment: scroll;
+    z-index: 10;
+  }
+
+  .section-fourth {
+    position: absolute;
+    height: 400px;
+    top: calc( 600px + 1200px + 100% ); // secondのheight+thirdのheight+100%
+    left: 0;
+    background-color: #000;
+
+    .box-fourth {
+      height: 200px;
+      top: calc( 600px + 1200px + 100% ); // section-fourthのtopを同じ値
       color: white;
-      transition: all 0.15s linear;
     }
   }
 }
 
-.welcome {
-  -webkit-animation-name: welcome;
-  -webkit-animation-duration: .9s;
-}
-
-@-webkit-keyframes welcome {
-  from {
-    -webkit-transform: scale(0);
-    opacity: 0;
-  }
-  50% {
-   -webkit-transform: scale(0);
-   opacity: 0;
-  }
-  82.5% {
-    -webkit-transform: scale(1.03);
-    -webkit-animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: scale(1);
+@media screen and ( max-width: 767px ) {
+  .section-first {
+    background: url( "/images/header_image.jpg" );
+    background-attachment: fixed;
   }
 }

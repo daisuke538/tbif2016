@@ -13,9 +13,17 @@ og_image: 'images/index/ogp.png'
 ---
 
 .welcome
-  .logo
-    = image_tag "middleman-logo.svg"
-  h1
-    | Middleman is Running
-  p.doc
-    = link_to "Read Documentation Online", "https://middlemanapp.com", target: "_blank"
+  .cover class="section-first"
+    .box-first class="box-fix"
+      | トップ
+  /.pattern-first
+  .section-second
+    .box-second
+      | Info
+  .section-third
+    .box-third
+      | Line-Up
+  /.pattern-third
+  .section-fourth
+    .box-fourth
+      | News
