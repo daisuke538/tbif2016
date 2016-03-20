@@ -44,7 +44,9 @@ header {
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
+    -webkit-background-size: cover;
     -moz-background-size: cover;
+    -o-background-size: cover;
     display: inline-block;
 
     .box-first {
@@ -101,7 +103,9 @@ header {
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
+    -webkit-background-size: cover;
     -moz-background-size: cover;
+    -o-background-size: cover;
     display: inline-block;
 
     .box-third {
@@ -140,7 +144,8 @@ header {
 
 @media screen and ( max-width: 767px ) {
   .section-first {
-    background: url( "/images/header_image.jpg" );
+    max-width: 100%;
+    //background: url( "/images/header_image.jpg" );
     background-attachment: scroll;
   }
 }
