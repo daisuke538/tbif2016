@@ -30,7 +30,7 @@ header {
     margin: 0;
     padding: 0;
     padding-top: 70%;
-    display: block;
+    //display: block;
     color: #fff;
   }
 
@@ -47,7 +47,7 @@ header {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    display: inline-block;
+    //display: inline-block;
 
     .box-first {
       color: #fff;
@@ -106,7 +106,7 @@ header {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    display: inline-block;
+    //display: inline-block;
 
     .box-third {
       height: 200px;
@@ -143,9 +143,15 @@ header {
 }
 
 @media screen and ( max-width: 767px ) {
-  .section-first {
-    max-width: 100%;
-    //background: url( "/images/header_image.jpg" );
+  .section-first::before {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    top:0;
+    left:0;
+    z-index:-1;
+    background: url( "/images/header_image.jpg" );
     background-attachment: scroll;
   }
 }
