@@ -140,23 +140,23 @@ header {
       color: white;
     }
   }
-}
 
-@media screen and ( max-width: 767px ) {
-  .section-first {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    display: block;
-    top: 0;
-    left: 0;
-    background: url( "/images/section_first_image_sp.jpg" );
-    background-repeat: no-repeat;
-    background-attachment: scroll;;
-    background-position: center center;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+  @media screen and ( max-width: 767px ) {
+    .section-first {
+      //position: fixed;
+      width: 100%;
+      height: 100vh;
+      //display: block;
+      top: 0;
+      left: 0;
+      background-image: url( "/images/section_first_image_sp.jpg" );
+      background-repeat: no-repeat;
+      background-attachment: scroll;;
+      background-position: center center;
+      background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+    }
   }
 }
