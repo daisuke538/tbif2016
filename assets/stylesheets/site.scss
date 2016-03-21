@@ -153,11 +153,12 @@ header {
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
+      display: block;
     }
 
     .section-third {
       width: 100%;
-      height: 100%;
+      height: 1300px;
       background-image: url( "/images/section_thrid_image_sp@2x.jpg" );
       background-attachment: scroll;
       background-position: center center;
@@ -165,6 +166,7 @@ header {
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
+      display: block;
     }
   }
 }
