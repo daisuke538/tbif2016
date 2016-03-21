@@ -47,7 +47,11 @@ header {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    //display: inline-block;
+
+    @media screen and ( max-width: 767px ) {
+      .section-first {
+        background-image: url( "/images/section_first_image_sp@2x.jpg" );
+    }
 
     .box-first {
       color: #fff;
@@ -106,7 +110,11 @@ header {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    //display: inline-block;
+
+    @media screen and ( max-width: 767px ) {
+      .section-third {
+        background-image: url( "/images/section_third_image_sp@2x.jpg" );
+    }
 
     .box-third {
       height: 200px;
@@ -140,7 +148,7 @@ header {
       color: white;
     }
   }
-
+  /*
   @media screen and ( max-width: 767px ) {
     .section-first {
       width: 100%;
@@ -166,4 +174,5 @@ header {
       -o-background-size: cover;
     }
   }
+  */
 }
