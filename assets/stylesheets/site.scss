@@ -13,155 +13,209 @@ body {
 header {
 }
 
-.welcome {
-  width: 100%;
-
-  .cover, .box-fix,
-  .section-first, .section-second, .section-third, .section-fourth,
-  .box-fix, .box-first, .box-second, .box-third, .box-fourth,
-  .pattern-first, .pattern-third {
+@media screen and ( min-width: 769px ) {
+  .welcome {
     width: 100%;
-    border: 1px solid black;
-  }
 
-  .cover {
-    position: relative;
-    height: 70%;
-    margin: 0;
-    padding: 0;
-    padding-top: 70%;
-    //display: block;
-    color: #fff;
-  }
-
-  .section-first {
-    position: absolute;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: url( "/images/section_first_image.jpg" ); // 750px1334px
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-
-    .box-first {
-      color: #fff;
-    }
-  }
-
-  .box-fix {
-    position: fixed;
-    height: 20px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    line-height: 160%;
-    text-align: center;
-    text-shadow: 0 1px 1px rgba(0,0,0,.3);
-  }
-
-  .pattern-first {
-    position: absolute;
-    height: 100%;
-    top: 0; // section-firstからの距離感
-    left: 0;
-    background-image: url( "/images/pattern.png" );
-    background-repeat: repeat;
-    background-attachment: scroll;
-    z-index: 10;
-  }
-
-  .section-second {
-    position: absolute;
-    height: 600px;
-    top: 100%; // section-firstからの距離感
-    left: 0;
-    background-color: #fff;
-
-    .box-second {
-      height: 300px;
-      top: 100%; // section-secondのtopを同じ値
-      //background-color: #582;
-      color: #000;
-    }
-  }
-
-  .section-third {
-    position: absolute;
-    height: 1200px;
-    top: calc( 600px + 100% ); // secondのheight+100%
-    left: 0;
-    background: url( "/images/section_third_image.jpg" );
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-
-    .box-third {
-      height: 200px;
-      top: calc( 600px + 100% ); // section-thirdのtopを同じ値
-      //background-color: #597;
-      color: #fff;
-    }
-  }
-
-  .pattern-third {
-    position: absolute;
-    height: 100%;
-    top: 200%;
-    left: 0;
-    background-image: url( "/images/pattern.png" );
-    background-repeat: repeat;
-    background-attachment: scroll;
-    z-index: 10;
-  }
-
-  .section-fourth {
-    position: absolute;
-    height: 400px;
-    top: calc( 600px + 1200px + 100% ); // secondのheight+thirdのheight+100%
-    left: 0;
-    background-color: #000;
-
-    .box-fourth {
-      height: 200px;
-      top: calc( 600px + 1200px + 100% ); // section-fourthのtopを同じ値
-      color: white;
-    }
-  }
-
-  @media screen and ( max-width: 767px ) {
-    .section-first {
+    .cover, .box-fix,
+    .section-first, .section-second, .section-third, .section-fourth,
+    .box-fix, .box-first, .box-second, .box-third, .box-fourth,
+    .pattern-first, .pattern-third {
       width: 100%;
+      border: 1px solid black;
+    }
+
+    .cover {
+      position: relative;
+      height: 70%;
+      margin: 0;
+      padding: 0;
+      padding-top: 70%;
+      //display: block;
+      color: #fff;
+    }
+
+    .section-first {
+      position: absolute;
       height: 100%;
-      background-image: url( "/images/section_first_image_sp@2x.jpg" );
-      background-attachment: scroll;
+      top: 0;
+      left: 0;
+      background: url( "/images/section_first_image.jpg" ); // 750px1334px
+      background-repeat: no-repeat;
+      background-attachment: fixed;
       background-position: center center;
       background-size: cover;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
+
+      .box-first {
+        color: #fff;
+      }
+    }
+
+    .box-fix {
+      position: fixed;
+      height: 20px;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      line-height: 160%;
+      text-align: center;
+      text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    }
+
+    .pattern-first {
+      position: absolute;
+      height: 100%;
+      top: 0; // section-firstからの距離感
+      left: 0;
+      background-image: url( "/images/pattern.png" );
+      background-repeat: repeat;
+      background-attachment: scroll;
+      z-index: 10;
+    }
+
+    .section-second {
+      position: absolute;
+      height: 600px;
+      top: 100%; // section-firstからの距離感
+      left: 0;
+      background-color: #fff;
+
+      .box-second {
+        height: 300px;
+        top: 100%; // section-secondのtopを同じ値
+        //background-color: #582;
+        color: #000;
+      }
     }
 
     .section-third {
-      width: 100%;
+      position: absolute;
+      height: 1200px;
+      top: calc( 600px + 100% ); // secondのheight+100%
+      left: 0;
+      background: url( "/images/section_third_image.jpg" );
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center center;
+      background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+
+      .box-third {
+        height: 200px;
+        top: calc( 600px + 100% ); // section-thirdのtopを同じ値
+        //background-color: #597;
+        color: #fff;
+      }
+    }
+
+    .pattern-third {
+      position: absolute;
       height: 100%;
-      background-image: url( "/images/section_thrid_image_sp@2x.jpg" );
+      top: 200%;
+      left: 0;
+      background-image: url( "/images/pattern.png" );
+      background-repeat: repeat;
+      background-attachment: scroll;
+      z-index: 10;
+    }
+
+    .section-fourth {
+      position: absolute;
+      height: 400px;
+      top: calc( 600px + 1200px + 100% ); // secondのheight+thirdのheight+100%
+      left: 0;
+      background-color: #000;
+
+      .box-fourth {
+        height: 200px;
+        top: calc( 600px + 1200px + 100% ); // section-fourthのtopを同じ値
+        color: white;
+      }
+    }
+  }
+}
+
+/* スマホ・タブレット対応 */
+@media screen and ( max-width: 768px ) {
+  .welcome {
+    .cover, .box-fix,
+    .section-first, .section-second, .section-third, .section-fourth,
+    .box-fix, .box-first, .box-second, .box-third, .box-fourth,
+    .pattern-first, .pattern-third {
+      width: 100%;
+      border: 1px solid black;
+    }
+
+    .cover {
+    }
+
+    .section-first {
+      position: relative;
+      height: 800px;
+      background-image: url( "/images/section_first_image_sp@2x.jpg" );
+      background-position: center center;
+      background-attachment: scroll;
+      background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+
+      .box-first {
+        position: absolute;
+        top: 10%;
+        left: auto;
+        right: auto;
+        text-align: center;
+        color: #fff;
+      }
+    }
+
+    .box-fix {
+      position: fixed;
+    }
+
+    .section-second {
+      height: 400px;
+      background-color: #fff;
+
+      .box-second {
+        height: 100px;
+        color: #000;
+      }
+    }
+
+    .section-third {
+      height: 1000px;
+      background-image: url( "/images/section_third_image_sp@2x.jpg" );
       background-attachment: scroll;
       background-position: center center;
       background-size: cover;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
+      display: inline-block;
+
+      .box-third {
+        height: 200px;
+        color: #fff;
+      }
+    }
+
+    .section-fourth {
+      height: 400px;
+      background-color: #000;
+
+      .box-fourth {
+        height: 200px;
+        color: white;
+      }
     }
   }
 }
