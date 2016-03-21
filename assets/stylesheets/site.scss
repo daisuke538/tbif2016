@@ -143,15 +143,22 @@ header {
 }
 
 @media screen and ( max-width: 767px ) {
-  .section-first::before {
+  .section-first {
     position: fixed;
     width: 100%;
     height: 100vh;
+    /*
     display: block;
-    top:0;
-    left:0;
-    z-index:-1;
-    background: url( "/images/header_image.jpg" );
-    background-attachment: scroll;
+    top: 0;
+    left: 0;
+    */
+    //background: url( "/images/section_first_image.jpg" );
+    //background-repeat: no-repeat;
+    background-attachment: scroll;;
+    //background-position: center center;
+    //background-size: cover;
+    //-webkit-background-size: cover;
+    //-moz-background-size: cover;
+    //-o-background-size: cover;
   }
 }
