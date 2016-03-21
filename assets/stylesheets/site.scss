@@ -13,7 +13,7 @@ body {
 header {
 }
 
-.welcome {
+.wrapper {
   width: 100%;
 
   .cover, .box-fix,
@@ -49,7 +49,16 @@ header {
     -o-background-size: cover;
 
     @media screen and ( max-width: 767px ) {
+      position: fixed;
+      width: 100%;
+      height: 100%;
       background-image: url( "/images/section_first_image_sp@2x.jpg" );
+      background-attachment: scroll;
+      background-position: center center;
+      background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
     }
 
     .box-first {
@@ -88,6 +97,11 @@ header {
     left: 0;
     background-color: #fff;
 
+    @media screen and ( max-width: 767px ) {
+      position: fixed;
+      top: 0;
+    }
+
     .box-second {
       height: 300px;
       top: 100%; // section-secondのtopを同じ値
@@ -101,7 +115,7 @@ header {
     height: 1200px;
     top: calc( 600px + 100% ); // secondのheight+100%
     left: 0;
-    background: url( "/images/section_third_image.jpg" );
+    background-image: url( "/images/section_third_image.jpg" );
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
@@ -111,7 +125,16 @@ header {
     -o-background-size: cover;
 
     @media screen and ( max-width: 767px ) {
+      position: fixed;
+      height: auto;
+      top: 0;
       background-image: url( "/images/section_third_image_sp@2x.jpg" );
+      background-attachment: scroll;
+      background-position: center center;
+      background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
     }
 
     .box-third {
@@ -140,14 +163,22 @@ header {
     left: 0;
     background-color: #000;
 
+    @media screen and ( max-width: 767px ) {
+      position: fixed;
+      top: 0;
+    }
+
     .box-fourth {
       height: 200px;
       top: calc( 600px + 1200px + 100% ); // section-fourthのtopを同じ値
       color: white;
     }
   }
-  /*
-  @media screen and ( max-width: 767px ) {
+}
+
+/*
+@media screen and ( max-width: 767px ) {
+  .wrapper {
     .section-first {
       width: 100%;
       height: 100%;
@@ -172,5 +203,5 @@ header {
       -o-background-size: cover;
     }
   }
-  */
 }
+*/
