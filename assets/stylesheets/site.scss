@@ -13,7 +13,7 @@ body {
 header {
 }
 
-.wrapper {
+.welcome {
   width: 100%;
 
   .cover, .box-fix,
@@ -97,7 +97,7 @@ header {
     height: 1200px;
     top: calc( 600px + 100% ); // secondのheight+100%
     left: 0;
-    background-image: url( "/images/section_third_image.jpg" );
+    background: url( "/images/section_third_image.jpg" );
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
@@ -138,11 +138,8 @@ header {
       color: white;
     }
   }
-}
 
-
-@media screen and ( max-width: 767px ) {
-  .wrapper {
+  @media screen and ( max-width: 767px ) {
     .section-first {
       width: 100%;
       height: 100%;
@@ -153,12 +150,11 @@ header {
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
-      display: block;
     }
 
     .section-third {
       width: 100%;
-      height: 1300px;
+      height: 100%;
       background-image: url( "/images/section_thrid_image_sp@2x.jpg" );
       background-attachment: scroll;
       background-position: center center;
@@ -166,7 +162,6 @@ header {
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
-      display: block;
     }
   }
 }
