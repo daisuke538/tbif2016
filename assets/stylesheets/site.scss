@@ -3,26 +3,71 @@
 
 body, header {
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em;
+  font-family: "Montserrat", "Questrial", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em; // 相対値。基本値は16px
 }
 
 header {
 }
 
+h1 {
+  margin-bottom: 6px;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+a:link,
+a:visited {
+  color: black;
+}
+
+.heading-bottom-line-black,
+.heading-bottom-line-white {
+  width: 30px;
+  height: 4px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.heading-bottom-line-black {
+  background-color: #000;
+}
+
+.heading-bottom-line-white {
+  background-color: #fff;
+}
+
+.icon-title-top-line {
+  width: 30px;
+  height: 4px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background-color: #e74c3c;
+}
+
+
+/* PC対応 */
 @media screen and ( min-width: 769px ) {
-  .welcome {
+  .index {
     width: 100%;
 
     .cover, .box-fix,
-    .section-first, .section-second, .section-third, .section-fourth,
-    .box-fix, .box-first, .box-second, .box-third, .box-fourth,
+    .top-view, .info-view, .news-view, .lineup-view,
+    .box-fix, .top-box, .info-box, .news-box, .lineup-box,
     .pattern-first, .pattern-third {
       width: 100%;
-      border: 1px solid black;
+      //border: 1px solid black;
     }
 
     .cover {
@@ -35,7 +80,7 @@ header {
       color: #fff;
     }
 
-    .section-first {
+    .top-view {
       position: absolute;
       height: 100%;
       top: 0;
@@ -49,7 +94,8 @@ header {
       -moz-background-size: cover;
       -o-background-size: cover;
 
-      .box-first {
+      .top-box {
+        text-align: center;
         color: #fff;
       }
     }
@@ -78,25 +124,66 @@ header {
       z-index: 10;
     }
 
-    .section-second {
+    .info-view {
       position: absolute;
-      height: 600px;
+      height: 710px;
       top: 100%; // section-firstからの距離感
       left: 0;
       background-color: #fff;
 
-      .box-second {
+      .info-box {
         height: 300px;
         top: 100%; // section-secondのtopを同じ値
-        //background-color: #582;
         color: #000;
+
+        .info-icon-top-sp,
+        .info-icon-middle-sp,
+        .info-icon-bottom-sp {
+          display: none;
+        }
+
+        .info-icon-top,
+        .info-icon-bottom {
+          display: flex;
+          display: -webkit-flex; // Safari
+          align-items: center;
+          -webkit-align-items: center; // Safari
+          justify-content: space-around;
+          -webkit-justify-content: space-around; // Safari
+          align-content: stretch;
+          -webkit-align-content: stretch; // Safari
+          flex-wrap: wrap;
+          -webkit-flex-wrap: wrap;
+          width: 100%;
+          margin: 0 auto;
+          margin-bottom: 30px;
+
+          .about-icon,
+          .timetable-icon,
+          .map-icon,
+          .notice-icon,
+          .supporter-icon,
+          .archive-icon {
+            img {
+              width: 200px;
+              height: 200px;
+              //border: 3px solid black;
+              //border-radius: 50%;
+
+              &:hover {
+                transition: 0.6s;
+                opacity: 0.6;
+              }
+            }
+          }
+        }
       }
     }
 
-    .section-third {
+    .news-view {
       position: absolute;
-      height: 1200px;
-      top: calc( 600px + 100% ); // secondのheight+100%
+      height: 680px;
+      top: calc( 710px + 100% ); // info-viewのheight+100%
       left: 0;
       background: url( "/images/section_third_image.jpg" );
       background-repeat: no-repeat;
@@ -107,11 +194,38 @@ header {
       -moz-background-size: cover;
       -o-background-size: cover;
 
-      .box-third {
-        height: 200px;
-        top: calc( 600px + 100% ); // section-thirdのtopを同じ値
-        //background-color: #597;
+      .news-box {
+        top: calc( 710px + 100% ); // news-viewのtopを同じ値
+        text-align: center; // news-innerを中央寄せするために必要
         color: #fff;
+
+        .news-inner {
+          display: inline-block; // news-innerを中央寄せするために必要
+          width: 80%;
+          margin-bottom: 20px;
+          padding: 20px;
+          background-color: rgba( 255, 255, 255, 0.6 );
+          text-align: left;
+          color: #000;
+
+          .news-date {
+
+          }
+
+          .news-title {
+            margin-top: 10px;
+          }
+        }
+
+        .news-read-more {
+          margin-top: 20px;
+          font-size: 1.2em;
+
+          a:link,
+          a:visited {
+            color: white;
+          }
+        }
       }
     }
 
@@ -126,37 +240,40 @@ header {
       z-index: 10;
     }
 
-    .section-fourth {
+    .lineup-view {
       position: absolute;
       height: 400px;
-      top: calc( 600px + 1200px + 100% ); // secondのheight+thirdのheight+100%
+      top: calc( 710px + 680px + 100% ); // info-viewのheight+news-viewのheight+100%
       left: 0;
-      background-color: #000;
+      background-color: white;
 
-      .box-fourth {
+      .lineup-box {
         height: 200px;
-        top: calc( 600px + 1200px + 100% ); // section-fourthのtopを同じ値
-        color: white;
+        top: calc( 710px + 680px + 100% ); // lineup-viewのtopを同じ値
+        color: black;
       }
     }
   }
 }
 
+
+
 /* スマホ・タブレット対応 */
 @media screen and ( max-width: 768px ) {
-  .welcome {
+  h3 {
+    font-size: 0.9em;
+  }
+
+  .index {
     .cover, .box-fix,
-    .section-first, .section-second, .section-third, .section-fourth,
-    .box-fix, .box-first, .box-second, .box-third, .box-fourth,
+    .top-view, .info-view, .news-view, .lineup-view,
+    .box-fix, .top-box, .info-box, .news-box, .lineup-box,
     .pattern-first, .pattern-third {
       width: 100%;
-      border: 1px solid black;
+      //border: 1px solid black;
     }
 
-    .cover {
-    }
-
-    .section-first {
+    .top-view {
       position: relative;
       height: 800px;
       background-image: url( "/images/section_first_image_sp@2x.jpg" );
@@ -167,7 +284,7 @@ header {
       -moz-background-size: cover;
       -o-background-size: cover;
 
-      .box-first {
+      .top-box {
         position: absolute;
         top: 10%;
         left: auto;
@@ -181,18 +298,56 @@ header {
       position: fixed;
     }
 
-    .section-second {
-      height: 400px;
+    .info-view {
+      //height: 400px;
       background-color: #fff;
 
-      .box-second {
-        height: 100px;
+      .info-box {
+        //height: 100px;
+        text-align: center;
         color: #000;
+
+        .info-icon-top,
+        .info-icon-bottom {
+          display: none;
+        }
+
+        .info-icon-top-sp,
+        .info-icon-middle-sp,
+        .info-icon-bottom-sp {
+          display: flex;
+          display: -webkit-flex; // Safari
+          align-items: center;
+          -webkit-align-items: center; // Safari
+          justify-content: space-around;
+          -webkit-justify-content: space-around; // Safari
+          align-content: stretch;
+          -webkit-align-content: stretch; // Safari
+          flex-wrap: wrap;
+          -webkit-flex-wrap: wrap;
+          width: 100%;
+          margin: 0 auto;
+          margin-bottom: 30px;
+
+          .about-icon,
+          .timetable-icon,
+          .map-icon,
+          .notice-icon,
+          .supporter-icon,
+          .archive-icon {
+            img {
+              width: 100px;
+              height: 100px;
+              //border: 3px solid black;
+              //border-radius: 50%;
+            }
+          }
+        }
       }
     }
 
-    .section-third {
-      height: 1000px;
+    .news-view {
+      height: 800px;
       background-image: url( "/images/section_third_image_sp@2x.jpg" );
       background-attachment: scroll;
       background-position: center center;
@@ -202,19 +357,47 @@ header {
       -o-background-size: cover;
       display: inline-block;
 
-      .box-third {
-        height: 200px;
+      .news-box {
+        text-align: center;
         color: #fff;
+
+        .news-inner {
+          display: inline-block; // news-innerを中央寄せするために必要
+          width: 80%;
+          margin-bottom: 20px;
+          padding: 20px;
+          background-color: rgba( 255, 255, 255, 0.6 );
+          text-align: left;
+          color: #000;
+
+          .news-date {
+
+          }
+
+          .news-title {
+            margin-top: 10px;
+          }
+        }
+
+        .news-read-more {
+          margin-top: 20px;
+          font-size: 1.2em;
+
+          a:link,
+          a:visited {
+            color: white;
+          }
+        }
       }
     }
 
-    .section-fourth {
+    .lineup-view {
       height: 400px;
-      background-color: #000;
+      background-color: white;
 
-      .box-fourth {
+      .lineup-box {
         height: 200px;
-        color: white;
+        color: black;
       }
     }
   }

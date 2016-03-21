@@ -12,18 +12,93 @@ og_description: 九州の音楽を地元へ、全国へ発信する。九州が�
 og_image: 'images/index/ogp.png'
 ---
 
-.welcome
-  .cover class="section-first"
-    .box-first class="box-fix"
+main.index
+  article.cover.top-view
+    .top-box class="box-fix"
       | トップ
   /.pattern-first
-  .section-second
-    .box-second
-      | Info
-  .section-third
-    .box-third
-      | Line-Up
+  article.info-view
+    section.info-box
+      h1 Information
+      .heading-bottom-line-black
+      / PC用
+      .info-icon-top
+        .about-icon
+          = link_to "#{image_tag '/images/about.png', :alt => 'About'}", '/about.html'
+          .icon-title-top-line
+          h3 About
+        .timetable-icon
+          = link_to "#{image_tag '/images/timetable.png', :alt => 'Time Table'}", '/timetable.html'
+          .icon-title-top-line
+          h3 Time Table
+        .map-icon
+          = link_to "#{image_tag '/images/map.png', :alt => 'Map'}", '/map.html'
+          .icon-title-top-line
+          h3 Map
+      .info-icon-bottom
+        .notice-icon
+          = link_to "#{image_tag '/images/notice.png', :alt => 'Notice'}", '/notice.html'
+          .icon-title-top-line
+          h3 Notice
+        .supporter-icon
+          = link_to "#{image_tag '/images/supporter.png', :alt => 'Supporter'}", '/supporter.html'
+          .icon-title-top-line
+          h3 Supporter
+        .archive-icon
+          = link_to "#{image_tag '/images/archive.png', :alt => 'Archive'}", '/archive.html'
+          .icon-title-top-line
+          h3 Archive
+      / スマホ用
+      .info-icon-top-sp
+        .about-icon
+          = link_to "#{image_tag '/images/about.png', :alt => 'About'}", '/about.html'
+          .icon-title-top-line
+          h3 About
+        .timetable-icon
+          = link_to "#{image_tag '/images/timetable.png', :alt => 'Time Table'}", '/timetable.html'
+          .icon-title-top-line
+          h3 Time Table
+      .info-icon-middle-sp
+        .map-icon
+          = link_to "#{image_tag '/images/map.png', :alt => 'Map'}", '/map.html'
+          .icon-title-top-line
+          h3 Map
+        .notice-icon
+          = link_to "#{image_tag '/images/notice.png', :alt => 'Notice'}", '/notice.html'
+          .icon-title-top-line
+          h3 Notice
+      .info-icon-bottom-sp
+        .supporter-icon
+          = link_to "#{image_tag '/images/supporter.png', :alt => 'Supporter'}", '/supporter.html'
+          .icon-title-top-line
+          h3 Supporter
+        .archive-icon
+          = link_to "#{image_tag '/images/archive.png', :alt => 'Archive'}", '/archive.html'
+          .icon-title-top-line
+          h3 Archive
+  article.news-view
+    section.news-box
+      h1 News
+      .heading-bottom-line-white
+      .news-inner
+        .news-date
+          | 2016.04.01
+        .news-title
+          = link_to 'cocono fest. 2016 開催決定', 'http://coconofest.hateblo.jp/', :target => '_blank'
+      .news-inner
+        .news-date
+          | 2016.04.01
+        .news-title
+          = link_to 'cocono fest. 2016 開催決定', 'http://coconofest.hateblo.jp/', :target => '_blank'
+      .news-inner
+        .news-date
+          | 2016.04.01
+        .news-title
+          = link_to 'テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト', 'http://coconofest.hateblo.jp/', :target => '_blank'
+      .news-read-more
+        = link_to 'Read More >>', 'http://coconofest.hateblo.jp/', :target => '_blank'
   /.pattern-third
-  .section-fourth
-    .box-fourth
-      | News
+  article.lineup-view
+    section.lineup-box
+      h1 Line-Up
+      .heading-bottom-line-black
