@@ -16,7 +16,7 @@ main.index
   article.cover.top-view
     .top-box class="box-fix"
       | トップ
-  /.pattern-first
+  .pattern-first
   article.info-view
     section.info-box
       h1 Information
@@ -102,3 +102,53 @@ main.index
     section.lineup-box
       h1 Line-Up
       .heading-bottom-line-black
+      .lineup-inner
+        .lineup-card
+          .lineup-thumbnail
+            = link_to "#{image_tag '/images/lineup', :alt => ''}", ''
+          .lineup-text
+            .icon-title-top-line
+            h3 出演者1出演者1出演者1出演者1
+        .lineup-card
+          .lineup-thumbnail
+            = link_to "#{image_tag '/images/lineup/', :alt => ''}", ''
+          .lineup-text
+            .icon-title-top-line
+            h3 出演者2
+        .lineup-card
+          .lineup-thumbnail
+            = link_to "#{image_tag '/images/lineup/', :alt => ''}", ''
+          .lineup-text
+            .icon-title-top-line
+            h3 出演者3
+        .lineup-card
+          .lineup-thumbnail
+            = link_to "#{image_tag '/images/lineup/', :alt => ''}", ''
+          .lineup-text
+            .icon-title-top-line
+            h3 出演者4
+      .lineup-inner
+        .lineup-card
+          .lineup-thumbnail
+            = link_to "#{image_tag '/images/lineup/', :alt => ''}", ''
+          .lineup-text
+            .icon-title-top-line
+            h3 出演者1出演者1出演者1出演者1
+        .lineup-card
+          .lineup-thumbnail
+            = link_to "#{image_tag '/images/lineup/', :alt => ''}", ''
+          .lineup-text
+            .icon-title-top-line
+            h3 出演者2
+        .lineup-card
+          .lineup-thumbnail
+            = link_to "#{image_tag '/images/lineup/', :alt => ''}", ''
+          .lineup-text
+            .icon-title-top-line
+            h3 出演者3
+        .lineup-card
+          .lineup-thumbnail
+            = link_to "#{image_tag '/images/lineup/', :alt => ''}", ''
+          .lineup-text
+            .icon-title-top-line
+            h3 出演者4
