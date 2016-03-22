@@ -13,11 +13,11 @@ og_image: 'images/index/ogp.png'
 ---
 
 main.index
-  article.cover.top-view
+  article.cover.top-view#top
     .top-box class="box-fix"
       | トップ
   .pattern-first
-  article.info-view
+  article.info-view#info
     section.info-box
       h1 Information
       .heading-bottom-line-black
@@ -76,7 +76,7 @@ main.index
           = link_to "#{image_tag '/images/archive.png', :alt => 'Archive'}", '/archive.html'
           .icon-title-top-line
           h3 Archive
-  article.news-view
+  article.news-view#news
     section.news-box
       h1 News
       .heading-bottom-line-white
@@ -98,7 +98,7 @@ main.index
       .news-read-more
         = link_to 'Read More >>', 'http://coconofest.hateblo.jp/', :target => '_blank'
   /.pattern-third
-  article.lineup-view
+  article.lineup-view#lineup
     section.lineup-box
       h1 Line-Up
       .heading-bottom-line-black

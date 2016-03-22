@@ -28,6 +28,8 @@ html
     link href="//fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css"
     link href="//fonts.googleapis.com/css?family=Questrial" rel="stylesheet" type="text/css"
     link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css"
+    script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"
+    script src="/javascripts/jquery.inview.min.js" type="text/javascript"
     = stylesheet_link_tag :site
     = javascript_include_tag :all
 
@@ -35,3 +37,29 @@ html
     = partial "share/header"
     = yield
     = partial "share/footer"
+
+    javascript:
+      $( function(){
+        // ページ内リンクのスムーズスクロール
+        $( 'a[href^="#"]' ).on( 'click', function() {
+          var speed = 500;
+          var href= $( this ).attr( 'href' );
+          var target = $( href == '#' || href == '' ? 'html' : href );
+          var position = target.offset().top;
+
+          $( 'html, body' ).animate( {scrollTop:position}, speed, 'swing' );
+
+          return false;
+        });
+
+        $( '.info-view' ).on( 'inview', function( isInView, visiblePartX, visiblePartY ) {
+          if( isInView ) {
+            //alert( 'OK' );
+          }
+        });
+
+        $( window ).on( 'scroll touchmove', function(){ //スクロール中に判断する
+          $( 'footer' ).stop(); //アニメーションしている場合、アニメーションを強制停止
+          $( 'footer' ).css( 'display', 'none' ).delay( 500 ).fadeIn( 500 ); //スクロール中は非表示。停止して500ms後に800msかけて再表示
+        });
+      });

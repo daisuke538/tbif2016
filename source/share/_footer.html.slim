@@ -1,1 +1,31 @@
 footer
+  nav.nav-wrapper
+    .nav-inner
+      .nav-card
+        .nav-icon
+          = link_to "#{image_tag '/images/info.png', :alt => 'Info'}", '#info'
+        .nav-name
+          | Info
+      .nav-card
+        .nav-icon
+          = link_to "#{image_tag '/images/news.png', :alt => 'News'}", '#news'
+        .nav-name
+          | News
+      .nav-card
+        .nav-icon
+          = link_to "#{image_tag '/images/lineup.png', :alt => 'Line-Up'}", '#lineup'
+        .nav-name
+          | Line-Up
+      .nav-card
+        .nav-icon
+          = link_to "#{image_tag '/images/gallery.png', :alt => 'Gallery'}", '#gallery'
+        .nav-name
+          | Gallery
+      .nav-card
+        .nav-icon
+          = link_to "#{image_tag '/images/contact.png', :alt => 'Contact'}", '#contact'
+        .nav-name
+          | Contact
+  .scroll-to-top
+    = link_to "#{image_tag '/images/scroll_to_top.png', :alt => 'Scroll To Top'}", '#top'
+  .clearfix
