@@ -238,12 +238,26 @@ a:visited {
         }
 
         .news-read-more {
+          width: 230px;
+          height: 50px;
+          margin: 0 auto;
           margin-top: 20px;
-          font-size: 1.2em;
+          font-size: 1.1em;
+          font-weight: 300;
+          text-align: center;
+          border: 1px solid white;
 
-          a:link,
-          a:visited {
-            color: white;
+          a {
+            display: inline-block;
+            width: 100%;
+            height: calc( 100% - 14px );
+            padding-top: 14px;
+            text-decoration: none;
+
+            &:link,
+            &:visited {
+              color: white;
+            }
           }
         }
       }
@@ -516,12 +530,25 @@ a:visited {
         }
 
         .news-read-more {
+          width: 200px;
+          height: 48px;
+          margin: 0 auto;
           margin-top: 20px;
-          font-size: 1.2em;
+          font-weight: 300;
+          text-align: center;
+          border: 1px solid white;
 
-          a:link,
-          a:visited {
-            color: white;
+          a {
+            display: inline-block;
+            width: 100%;
+            height: calc( 100% - 14px );
+            padding-top: 14px;
+            text-decoration: none;
+
+            &:link,
+            &:visited {
+              color: white;
+            }
           }
         }
       }
