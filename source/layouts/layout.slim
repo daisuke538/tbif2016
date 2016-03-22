@@ -30,6 +30,7 @@ html
     link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css"
     script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"
     script src="/javascripts/jquery.inview.min.js" type="text/javascript"
+    script src="/javascripts/instafeed.min.js" type="text/javascript"
     = stylesheet_link_tag :site
     = javascript_include_tag :all
 
@@ -62,4 +63,31 @@ html
           $( 'footer' ).stop(); //アニメーションしている場合、アニメーションを強制停止
           $( 'footer' ).css( 'display', 'none' ).delay( 500 ).fadeIn( 500 ); //スクロール中は非表示。停止して500ms後に800msかけて再表示
         });
+
+        // Instagramの写真を取得
+        var loadButton = document.getElementById('load-more');
+
+        var feed = new Instafeed({
+            after: function() {
+                // disable button if no more results to load
+                if (!this.hasNext()) {
+                    loadButton.setAttribute('disabled', 'disabled');
+                }
+            },
+
+            get: 'tagged', //ハッシュタグから取得
+            tagName: 'タワフェス福岡', //好きなハッシュタグを設定
+            sortBy:'most-recent', //並び順
+            links: true , //画像リンク取得
+            limit: 20, //取得する画像数を設定
+            resolution: 'low_resolution', //画像サイズを設定
+            template: '<li><a href="{{link}}" target="_blank"><img src="{{image}}" /></a></li>',
+            clientId: '64f29880e1c04039b0455e2a03a3ea0e' //Instagram DevelopersのクライアントID
+        });
+
+        loadButton.addEventListener('click', function() {
+            feed.next();
+        });
+
+        feed.run();
       });

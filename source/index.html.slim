@@ -97,7 +97,6 @@ main.index
           = link_to 'テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト', 'http://coconofest.hateblo.jp/', :target => '_blank'
       .news-read-more
         = link_to 'Read More', 'http://coconofest.hateblo.jp/', :target => '_blank'
-  /.pattern-third
   article.lineup-view#lineup
     section.lineup-box
       h1 Line-Up
@@ -152,3 +151,26 @@ main.index
           .lineup-text
             .icon-title-top-line
             h3 出演者4
+  article.contact-view#contact
+    section.contact-box
+      h1 Contact
+      .heading-bottom-line-black
+      .contact-inner
+        = link_to "#{image_tag '/images/contact/twitter.png', :alt => ''}", ''
+        = link_to "#{image_tag '/images/contact/facebook.png', :alt => ''}", ''
+        = link_to "#{image_tag '/images/contact/instagram.png', :alt => ''}", ''
+      p
+        | 各種お問い合わせは、下記アドレスにお願いいたします。
+        br
+        br
+        = link_to 'info@coconofest.asia', 'info@coconofest.asia'
+  article.gallery-view#gallery
+    section.gallery-box
+      h1 Gallery
+      .heading-bottom-line-white
+      .gallery-inner
+        #instafeed
+        button#load-more type="button"
+          | Load More
+        .clearfix
+  .position-initial
