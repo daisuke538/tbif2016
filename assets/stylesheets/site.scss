@@ -266,18 +266,7 @@ a:visited {
         }
       }
     }
-
-    .pattern-third {
-      position: absolute;
-      height: 100%;
-      top: 200%;
-      left: 0;
-      background-image: url( "/images/pattern.png" );
-      background-repeat: repeat;
-      background-attachment: scroll;
-      z-index: 10;
-    }
-
+    
     .lineup-view {
       position: absolute;
       height: 800px;
@@ -528,6 +517,17 @@ a:visited {
   }
 
   .index {
+    .pattern-first {
+      position: absolute;
+      height: 800px; // top-viewと同じ高さ
+      top: 0; // section-firstからの距離感
+      left: 0;
+      background-image: url( "/images/pattern.png" );
+      background-repeat: repeat;
+      background-attachment: scroll;
+      z-index: 10;
+    }
+
     .cover, .box-fix,
     .top-view, .info-view, .news-view, .lineup-view, .contact-view, .gallery-view,
     .box-fix, .top-box, .info-box, .news-box, .lineup-box, .contact-box, .gallery-box,
@@ -554,6 +554,7 @@ a:visited {
         right: auto;
         text-align: center;
         color: #fff;
+        z-index: 20;
       }
     }
 
