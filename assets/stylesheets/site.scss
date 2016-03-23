@@ -90,6 +90,7 @@ a:visited {
 @media screen and ( min-width: 769px ) {
   .index {
     width: 100%;
+    overflow: hidden;
 
     .pattern-first {
       position: absolute;
@@ -525,6 +526,9 @@ a:visited {
   }
 
   .index {
+    width: 100%;
+    overflow: hidden;
+
     .pattern-first {
       position: absolute;
       height: 800px; // top-viewと同じ高さ
