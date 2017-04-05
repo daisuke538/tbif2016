@@ -1,0 +1,70 @@
+---
+layout: layout
+
+title: 'TSUSHIMA BORDER ISLAND FES 2016｜LINE-UP'
+description: '国境の島で開催される、島をあげた祭り。対馬でつながる『日韓×ミュージック×テクノロジー』'
+keywords: 対馬,長崎,韓国,日韓,九州,TBIF,対馬フェス,フェス,音楽,テクノロジー
+
+og_title: 'TSUSHIMA BORDER ISLAND FES 2016｜LINE-UP'
+og_type: website
+og_url: 'lineup/music/tairadaisuke.html'
+og_description: '国境の島で開催される、島をあげた祭り。つなぐ音、つなぐ未来 〜対馬でつながる 日韓×ミュージック×テクノロジー〜'
+og_image: 'lineup/music/tairadaisuke_large.jpg'
+---
+
+main#page-top
+  .page-header#guideline
+    .page-header-left
+      = image_tag '/images/logo_green.png', :alt => 'logo'
+    .page-header-center
+      .page-header-title
+        .page-header-title-en.font-amatic
+          | LINE-UP
+        .page-header-title-jp
+          | 出演者・出店
+        .page-category.font-amatic
+          = link_to 'PROFILE', '#performer-profile'
+          | /
+          = link_to 'MEDIA', '#performer-media'
+    .page-header-right.font-amatic
+      ol.breadcrumb.clearfix
+        li
+          = link_to 'HOME', 'index.html'
+        li
+          = link_to 'LINE-UP', 'lineup.html'
+        li.current
+          = link_to 'タイラダイスケ', '#'
+    .clearfix
+    .position-initial
+  .page-wrapper
+    .page-heading.font-amatic
+      span
+        | PROFILE
+    #performer-profile
+      .performer-name
+        | タイラダイスケ（FREE THROW）
+      // 横2100px縦1400px、横1800px縦1200px、横1500px縦1000px
+      .performer-img
+        = image_tag '/images/lineup/music/tairadaisuke_large.jpg', :alt => 'タイラダイスケ'
+      .performer-profile
+        | 踊れるRockを主体とし、洋邦新旧/ジャンルを飛び越えた選曲&BANDでDJ・Live Act・オーディエンス䛾等しい三角形を創り出す次世代型Music Partyのメンバー。
+        br
+        | インディペンデントなイベントの枠を越え、これまでに3枚のコンピアルバムをリリースし、新木場スタジオコーストではリリースパーティーを成功させている。
+        br
+        br
+        | 出演歴: BAYCAMP 2016 など
+        br
+        br
+        | 公式WEBサイト
+        br
+        = link_to 'http://freethrowweb.com/in.html', 'http://freethrowweb.com/in.html', :target => '_blank'
+      .performer-sns
+        | Twitter
+        br
+        = link_to '@freethrow_info', 'https://twitter.com/freethrow_info', :target => '_blank'
+    .page-heading.font-amatic
+      span
+        | MEDIA
+    #performer-media
+      .performer-youtube
+        iframe src="https://www.youtube.com/embed/5mOqpqJ2jgc" frameborder="0" allowfullscreen

@@ -1,0 +1,43 @@
+---
+layout: layout
+
+title: 'TSUSHIMA BORDER ISLAND FES 2017｜TIME TABLE'
+description: '「あじわう、つしま。」をテーマにした、国境の島で開催されるフェスティバル'
+keywords: 対馬,長崎,韓国,日韓,九州,フェス,音楽,テクノロジー
+
+og_title: 'TSUSHIMA BORDER ISLAND FES 2017｜TIME TABLE'
+og_type: website
+og_url: 'timetable.html'
+og_description: '「あじわう、つしま。」をテーマにした、国境の島で開催されるフェスティバル'
+og_image: 'ogp.jpg'
+---
+
+main#page-top
+  .page-header#guideline
+    .page-header-left
+      = image_tag '/images/logo_black.png', :alt => 'logo'
+    .page-header-center
+      .page-header-title
+        .page-header-title-en.font-amatic
+          | TIME TABLE
+        .page-header-title-jp
+          | 時間割
+      .page-category.font-amatic
+        
+    .page-header-right.font-amatic
+      ol.breadcrumb.clearfix
+        li
+          = link_to 'HOME', 'index.html'
+        li.current
+          = link_to 'TIME TABLE', '#'
+    .clearfix
+    .position-initial
+  .page-wrapper
+    .page-heading.font-amatic
+      span
+        | TIME TABLE
+    #timetable
+      .time-table
+        = image_tag '/images/timetable.png', :alt => 'timetable'
+        .view-pdf
+          = link_to 'PDFで見る', '/images/timetable.pdf', :target => '_blank'

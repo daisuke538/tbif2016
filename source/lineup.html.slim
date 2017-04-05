@@ -1,0 +1,185 @@
+---
+layout: layout
+
+title: 'TSUSHIMA BORDER ISLAND FES 2017｜LINE-UP'
+description: '「あじわう、つしま。」をテーマにした、国境の島で開催されるフェスティバル'
+keywords: 対馬,長崎,韓国,日韓,九州,フェス,音楽,テクノロジー
+
+og_title: 'TSUSHIMA BORDER ISLAND FES 2017｜LINE-UP'
+og_type: website
+og_url: 'lineup.html'
+og_description: '「あじわう、つしま。」をテーマにした、国境の島で開催されるフェスティバル'
+og_image: 'ogp.jpg'
+---
+
+main#page-top
+  .page-header#lineup
+    .page-header-left
+      = image_tag '/images/logo_black.png', :alt => 'logo'
+    .page-header-center
+      .page-header-title
+        .page-header-title-en.font-amatic
+          | LINE-UP
+        .page-header-title-jp
+          | 出演者・出店
+      .page-category.font-amatic
+        = link_to 'MUSIC', '#music'
+        | /
+        = link_to 'TECHNOLOGY', '#technology'
+        /
+          | /
+          = link_to 'MARCHE', '#marche'
+    .page-header-right.font-amatic
+      ol.breadcrumb.clearfix
+        li
+          = link_to 'HOME', 'index.html'
+        li.current
+          = link_to 'LINE-UP', '#'
+    .clearfix
+    .position-initial
+  .page-wrapper
+    .page-heading.font-amatic
+      span
+        | MUSIC
+    #music
+      // 写真は横480px縦320px or 横600px縦400px
+      .lineup-list
+        = link_to 'lineup/music/bird.html', class: 'lineup-detail' do
+          = image_tag '/images/lineup/music/bird.jpg', :alt => 'bird'
+          .lineup-region-japan
+            | 日本
+          .lineup-name.padding-en
+            p
+              | bird
+        = link_to 'lineup/music/10cm.html', class: 'lineup-detail' do
+          = image_tag '/images/lineup/music/10cm.jpg', :alt => '10CM'
+          .lineup-region-korea
+            | 韓国
+          .lineup-name.padding-en
+            p
+              | 10CM
+        = link_to 'lineup/music/okdal.html', class: 'lineup-detail' do
+          = image_tag '/images/lineup/music/okdal.jpg', :alt => 'OKDAL'
+          .lineup-region-korea
+            | 韓国
+          .lineup-name
+            p
+              | 屋上月光 / OKDAL
+        = link_to 'lineup/music/phonotones.html', class: 'lineup-detail' do
+          = image_tag '/images/lineup/music/phonotones.jpg', :alt => 'PHONO TONES'
+          .lineup-region-japan
+            | 日本
+          .lineup-name.padding-en
+            p
+              | PHONO TONES
+        = link_to 'lineup/music/uqiyo.html', class: 'lineup-detail' do
+          = image_tag '/images/lineup/music/uqiyo.jpg', :alt => 'UQiYO'
+          .lineup-region-japan
+            | 日本
+          .lineup-name.padding-en
+            p
+              | UQiYO
+        = link_to 'lineup/music/toremono.html', class: 'lineup-detail' do
+          = image_tag '/images/lineup/music/toremono.jpg', :alt => 'トレモノ'
+          .lineup-region-japan
+            | 日本
+          .lineup-name
+            p
+              | トレモノ
+        = link_to 'lineup/music/zundare.html', class: 'lineup-detail' do
+          = image_tag '/images/lineup/music/zundare.jpg', :alt => 'ずんだれ'
+          .lineup-region-tsushima
+            | 対馬
+          .lineup-name
+            p
+              | ずんだれ
+        = link_to 'lineup/music/takesuejunya.html', class: 'lineup-detail' do
+          = image_tag '/images/lineup/music/takesue.jpg', :alt => '武末 潤哉'
+          .lineup-region-tsushima
+            | 対馬
+          .lineup-name
+            p
+              | 武末 潤哉
+        = link_to 'lineup/music/ishigeakira.html', class: 'lineup-detail' do
+          = image_tag '/images/lineup/music/ishigeakira.jpg', :alt => '石毛 輝'
+          .category-dj
+            | DJ
+          .lineup-region-japan
+            | 日本
+          .lineup-name
+            p
+              | 石毛 輝 （the telephones/lovefilm）
+        = link_to 'lineup/music/tairadaisuke.html', class: 'lineup-detail' do
+          = image_tag '/images/lineup/music/tairadaisuke.jpg', :alt => 'タイラダイスケ'
+          .category-dj
+            | DJ
+          .lineup-region-japan
+            | 日本
+          .lineup-name
+            p
+              | タイラダイスケ （FREE THROW）
+        = link_to 'lineup/music/ifusarasa.html', class: 'lineup-detail' do
+          = image_tag '/images/lineup/music/sarasa.jpg', :alt => '依布サラサ'
+          .category-mc
+            | MC
+          .lineup-region-japan
+            | 日本
+          .lineup-name
+            p
+              | 依布サラサ
+    .page-heading.font-amatic
+      span
+        | TECHNOLOGY
+    #technology
+      // 写真は横480px縦320px or 横600px縦400px
+      .lineup-list
+        = link_to 'lineup/tech/ieiri.html', class: 'lineup-detail' do
+          = image_tag '/images/lineup/tech/ieiri.jpg', :alt => '家入一真'
+          .lineup-region-japan
+            | 日本
+          .lineup-name
+            p
+              | 家入一真 （株式会社CAMPFIRE 代表取締役）
+        = link_to 'lineup/tech/shin.html', class: 'lineup-detail' do
+          = image_tag '/images/lineup/tech/shin.jpg', :alt => '進浩人'
+          .lineup-region-japan
+            | 日本
+          .lineup-name
+            p
+              | 進浩人 （BAES株式会社 最高執行責任者）
+
+        = link_to 'lineup/tech/onishi.html', class: 'lineup-detail' do
+          = image_tag '/images/lineup/tech/onishi.jpg', :alt => '大西俊輔'
+          .lineup-region-japan
+            | 日本
+          .lineup-name
+            p
+              | 大西俊輔 （株式会社QPS研究所 代表取締役）
+        = link_to 'lineup/tech/hashimoto.html', class: 'lineup-detail' do
+          = image_tag '/images/lineup/tech/hashimoto.jpeg', :alt => '橋本正徳'
+          .lineup-region-japan
+            | 日本
+          .lineup-name
+            p
+              | 橋本正徳 （株式会社ヌーラボ 代表取締役）
+        = link_to 'lineup/tech/murajun.html', class: 'lineup-detail' do
+          = image_tag '/images/lineup/tech/murajun.jpg', :alt => '村上純志'
+          .lineup-region-japan
+            | 日本
+          .lineup-name
+            p
+              | 村上純志 （株式会社サイノウ 代表取締役）
+
+        = link_to 'lineup/tech/kazzwatabe.html', class: 'lineup-detail' do
+          = image_tag '/images/lineup/tech/kazzwatabe.jpg', :alt => 'カズワタベ'
+          .lineup-region-japan
+            | 日本
+          .lineup-name
+            p
+              | カズワタベ （ウミーベ株式会社 代表取締役）
+    /
+      .page-heading.font-amatic
+        span
+          | MARCHE
+      #marche
+        | Coming Soon

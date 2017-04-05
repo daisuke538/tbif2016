@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 
 # ruby ※バージョン設定を変更しないように
-ruby '2.2.0'
+ruby '2.3.1'
 
 
 # For faster file watcher updates on Windows:

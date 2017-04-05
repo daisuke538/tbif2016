@@ -1,31 +1,68 @@
 footer
-  nav.nav-wrapper
-    .nav-inner
-      .nav-card
-        .nav-icon
-          = link_to "#{image_tag '/images/info.png', :alt => 'Info'}", '#info'
-        .nav-name
-          | Info
-      .nav-card
-        .nav-icon
-          = link_to "#{image_tag '/images/news.png', :alt => 'News'}", '#news'
-        .nav-name
-          | News
-      .nav-card
-        .nav-icon
-          = link_to "#{image_tag '/images/lineup.png', :alt => 'Line-Up'}", '#lineup'
-        .nav-name
-          | Line-Up
-      .nav-card
-        .nav-icon
-          = link_to "#{image_tag '/images/contact.png', :alt => 'Contact'}", '#contact'
-        .nav-name
-          | Contact
-      .nav-card
-        .nav-icon
-          = link_to "#{image_tag '/images/gallery.png', :alt => 'Gallery'}", '#gallery'
-        .nav-name
-          | Gallery
   .scroll-to-top
-    = link_to "#{image_tag '/images/scroll_to_top.png', :alt => 'Scroll To Top'}", '#top'
+    = link_to "#{image_tag '/images/footer/page_top.png', :alt => 'Scroll To Top'}", '#page-top'
   .clearfix
+
+  .nav-title
+    = image_tag '/images/footer/menu.png', :alt => 'MENU', :class => 'pc'
+    = image_tag '/images/footer/menu_sp.png', :alt => 'MENU', :class => 'sp'
+  nav.nav-wrapper
+    .nav-menu.font-amatic
+      = link_to 'index.html', :class => 'nav-button'
+        | HOME
+        .nav-menu-jp
+          | ホーム
+      = link_to 'guideline.html', :class => 'nav-button'
+        | GUIDELINE
+        .nav-menu-jp
+          | TBIFのこと
+      = link_to 'ticket.html', :class => 'nav-button no-link'
+        | TICKET
+        .nav-menu-jp
+          | チケット購入
+      = link_to 'lineup.html', :class => 'nav-button no-link'
+        | LINE-UP
+        .nav-menu-jp
+          | 出演者・出店
+      = link_to 'timetable.html', :class => 'nav-button no-link'
+        | TIME TABLE
+        .nav-menu-jp
+          | 時間割
+      = link_to 'access.html', :class => 'nav-button'
+        | ACCESS
+        .nav-menu-jp
+          | アクセス・会場マップ
+      = link_to '', :class => 'nav-button no-link', :target => '_blank'
+        | TOUR
+        .nav-menu-jp
+          | ツアープラン
+      = link_to 'gallery.html', :class => 'nav-button no-link'
+        | GALLERY
+        .nav-menu-jp
+          | 写真ギャラリー
+      = link_to 'supporters.html', :class => 'nav-button'
+        | SUPPORTERS
+        .nav-menu-jp
+          | 協力・協賛
+      = link_to 'https://camp-fire.jp/projects/view/7141', :class => 'nav-button no-link', :target => '_blank'
+        | CLOUD FUNDING
+        .nav-menu-jp
+          | クラウドファンディング
+      = link_to 'https://tbif.thebase.in/', :class => 'nav-button no-link', :target => '_blank'
+        | GOODS
+        .nav-menu-jp
+          | オフィシャルグッズ
+      = link_to 'staff.html', :class => 'nav-button'
+        | STAFF
+        .nav-menu-jp
+          | 運営スタッフ
+    .nav-sns
+      = link_to "#{ image_tag '/images/footer/facebook.png', data: { 'sns' => 'facebook' }, :alt => 'Facebook' }", 'https://www.facebook.com/tsushimaborderislandfes/', :target => '_blank'
+      = link_to "#{ image_tag '/images/footer/twitter.png', data: { 'sns' => 'twitter' }, :alt => 'Twitter' }", 'https://twitter.com/tbif_official', :target => '_blank'
+      = link_to "#{ image_tag '/images/footer/instagram.png', data: { 'sns' => 'instagram' }, :alt => 'Instagram' }", 'https://www.instagram.com/tbif_official/', :target => '_blank'
+      /
+        = link_to "#{ image_tag '/images/footer/youtube.png', data: { 'sns' => 'youtube' }, :alt => 'Youtube' }", '', :target => '_blank'
+      = link_to "#{ image_tag '/images/footer/line.png', data: { 'sns' => 'line' }, :alt => 'LINE' }", 'http://line.me/ti/p/%40kcu4794a', :target => '_blank'
+    .clearfix
+    .copyright
+      | © 2016 TSUSHIMA BORDER ISLAND FES

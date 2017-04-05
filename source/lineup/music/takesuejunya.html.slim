@@ -1,0 +1,52 @@
+---
+layout: layout
+
+title: 'TSUSHIMA BORDER ISLAND FES 2016｜LINE-UP'
+description: '国境の島で開催される、島をあげた祭り。対馬でつながる『日韓×ミュージック×テクノロジー』'
+keywords: 対馬,長崎,韓国,日韓,九州,TBIF,対馬フェス,フェス,音楽,テクノロジー
+
+og_title: 'TSUSHIMA BORDER ISLAND FES 2016｜LINE-UP'
+og_type: website
+og_url: 'lineup/music/takesuejunya.html'
+og_description: '国境の島で開催される、島をあげた祭り。つなぐ音、つなぐ未来 〜対馬でつながる 日韓×ミュージック×テクノロジー〜'
+og_image: 'lineup/music/takesue_large.jpg'
+---
+
+main#page-top
+  .page-header#guideline
+    .page-header-left
+      = image_tag '/images/logo_green.png', :alt => 'logo'
+    .page-header-center
+      .page-header-title
+        .page-header-title-en.font-amatic
+          | LINE-UP
+        .page-header-title-jp
+          | 出演者・出店
+        .page-category.font-amatic
+          = link_to 'PROFILE', '#performer-profile'
+    .page-header-right.font-amatic
+      ol.breadcrumb.clearfix
+        li
+          = link_to 'HOME', 'index.html'
+        li
+          = link_to 'LINE-UP', 'lineup.html'
+        li.current
+          = link_to '武末 潤哉', '#'
+    .clearfix
+    .position-initial
+  .page-wrapper
+    .page-heading.font-amatic
+      span
+        | PROFILE
+    #performer-profile
+      .performer-name
+        | 武末 潤哉
+      // 横2100px縦1400px、横1800px縦1200px、横1500px縦1000px
+      .performer-img
+        = image_tag '/images/lineup/music/takesue_large.jpg', :alt => '武末 潤哉'
+      .performer-profile
+        | 長崎県対馬市出身。 現在渋谷、下北沢のライブハウスやストリートなど都内を中心に活動をしているシンガーソングライター
+      .performer-sns
+        | Facebook
+        br
+        = link_to 'takesuejunya', 'https://www.facebook.com/profile.php?id=100003586776746', :target => '_blank'

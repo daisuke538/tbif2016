@@ -1,0 +1,80 @@
+---
+layout: layout
+
+title: 'TSUSHIMA BORDER ISLAND FES 2016｜LINE-UP'
+description: '国境の島で開催される、島をあげた祭り。対馬でつながる『日韓×ミュージック×テクノロジー』'
+keywords: 対馬,長崎,韓国,日韓,九州,TBIF,対馬フェス,フェス,音楽,テクノロジー
+
+og_title: 'TSUSHIMA BORDER ISLAND FES 2016｜LINE-UP'
+og_type: website
+og_url: 'lineup/music/bird.html'
+og_description: '国境の島で開催される、島をあげた祭り。つなぐ音、つなぐ未来 〜対馬でつながる 日韓×ミュージック×テクノロジー〜'
+og_image: 'lineup/music/bird_large.jpg'
+---
+
+main#page-top
+  .page-header#guideline
+    .page-header-left
+      = image_tag '/images/logo_green.png', :alt => 'logo'
+    .page-header-center
+      .page-header-title
+        .page-header-title-en.font-amatic
+          | LINE-UP
+        .page-header-title-jp
+          | 出演者・出店
+        .page-category.font-amatic
+          = link_to 'PROFILE', '#performer-profile'
+          | /
+          = link_to 'MEDIA', '#performer-media'
+    .page-header-right.font-amatic
+      ol.breadcrumb.clearfix
+        li
+          = link_to 'HOME', 'index.html'
+        li
+          = link_to 'LINE-UP', 'lineup.html'
+        li.current
+          = link_to 'bird', '#'
+    .clearfix
+    .position-initial
+  .page-wrapper
+    .page-heading.font-amatic
+      span
+        | PROFILE
+    #performer-profile
+      .performer-name
+        | bird
+      // 横2100px縦1400px、横1800px縦1200px、横1500px縦1000px
+      .performer-img
+        = image_tag '/images/lineup/music/bird_large.jpg', :alt => 'bird'
+      .performer-profile
+        | グルーヴィな歌声と独創性に満ちた楽曲で、ジャンルを選ばず音楽ファンを魅了するシンガー&ソング・ライター。
+        br
+        | 大沢伸一/MONDO GROSSO主宰レーベルより「SOULS」で1999年デビュー。1stアルバム「bird」は70万枚突破。ゴールドディスク大賞新人賞獲得。
+        br
+        | 伸びやかな歌声を武器に、ジャンルの垣根を越えて活躍するその姿勢は、ライブも含め音楽ファンから高い評価を得ている。
+        br
+        br
+        | 出演歴: GREENROOM FESTIVAL ’16 / RISING SUN ROCK FESTIVAL 2016 など
+        br
+        br
+        | 公式WEBサイト
+        br
+        = link_to 'http://www.bird-watch.net/', 'http://www.bird-watch.net/', :target => '_blank'
+      .performer-sns
+        | Facebook
+        br
+        = link_to 'birdwatchnet', 'https://www.facebook.com/birdwatchnet', :target => '_blank'
+        br
+        br
+        | Twitter
+        br
+        = link_to '@birdwatchnet', 'https://twitter.com/birdwatchnet', :target => '_blank'
+    .page-heading.font-amatic
+      span
+        | MEDIA
+    #performer-media
+      .performer-youtube
+        iframe src="https://www.youtube.com/embed/Ecj9fLlI-tU" frameborder="0" allowfullscreen
+      .performer-youtube
+        iframe src="https://www.youtube.com/embed/OXzsxr19J6s" frameborder="0" allowfullscreen
+      .performer-article
