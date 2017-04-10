@@ -48,7 +48,7 @@ configure :build do
   # activate :minify_javascript
 
   # ignoreで指定したディレクトリ/ファイルを middleman build の対象外にする
-  ignore 'stylesheets/'
+  ignore 'stylesheets/*'
   ignore 'javascripts/*'
   ignore 'images/*'
   ignore 'fonts/*'
